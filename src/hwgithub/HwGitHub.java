@@ -38,7 +38,19 @@ public class HwGitHub {
     while ( numGuess < 3){
     System.out.println(" Guess a number between 0 and 10");
     int guess = sc.nextInt();  // Integer to input the attempts and the number chosen by programming
-      
+     
+     /* This variable is to check if the user has used the same number */  
+    boolean repeat = false; //
+    for (int i = 0; i < numGuess; i++){ //loop For to check if the number was input repeatly
+    if (attempts [i]== guess){
+    repeat= true;
+     System.out.println(" That was a waste – you already guessed that number!");
+        
+        }
+        }
+          
+   
+             
    
            
  
