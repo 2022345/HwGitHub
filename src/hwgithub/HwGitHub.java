@@ -33,7 +33,7 @@ public class HwGitHub {
        
     int  numGuess =0; // integer to check the number of guesses
         
-        
+    try{  
         /* loop to give to the user 3 attempts, if it's wrong guess, while will repeat */
     while ( numGuess < 3){
     System.out.println(" Guess a number between 0 and 10");
@@ -48,15 +48,17 @@ public class HwGitHub {
         
         }
         }
-          
+    }
    
+           
              
-   
+     }catch (Exception e){
+            }
            
  
     
 
 }
-    }
-    
 }
+    
+
