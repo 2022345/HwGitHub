@@ -48,17 +48,32 @@ public class HwGitHub {
         
         }
         }
+    
+    
+    if (repeat){
+        continue; // if the user types the same number, it returns to the loop While
+               
+        }  
+        attempts [numGuess]= guess; // add int numGuess inside to Array to storage
+        numGuess++;
+             
+        if (guess == number){ // if in case the user hits the correct number
+        System.out.println(" You win ");
+        return;
+        }
+        
+        if (numGuess ==3){ // if the user tried 10 attempts gives this message closing the attempts
+        System.out.println(" Hard luck, you run out of chances ");
+        }
+            
+                 
     }
-   
            
              
      }catch (Exception e){
             }
            
  
-    
-
+  
 }
 }
-    
-
